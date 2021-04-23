@@ -1,9 +1,10 @@
+<h1 class="suntext">{{title}}</h1>
 <div class="suntext">
-  <h1>{{title}}</h1>
   <p (click)="changeSun()" class="noselect">
     The sun warms my face<br>from a million miles away.<br>brilliant precision.
   </p>
 </div>
 <div class="suncomponents">
-<a><img *ngIf="sunny" src="https://freepngimg.com/thumb/sun/23611-7-sun.png" alt="picture of the sun" height="200px"/></a>
+<a routerLink="/sunny-places"><img *ngIf="sunny" src="https://freepngimg.com/thumb/sun/23611-7-sun.png" alt="picture of the sun" height="200px"/></a>
 </div>
+<router-outlet></router-outlet>

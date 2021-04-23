@@ -1,4 +1,5 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'my-app',
@@ -10,9 +11,8 @@ export class AppComponent  {
 
   sunny = true;
 
-  weatherUrl:string;
-
   changeSun(): void {
     this.sunny = !this.sunny;
+    
   }
 }
